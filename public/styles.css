@@ -1,3 +1,26 @@
 .container {
-    max-width: 960px;
+    width: 960px;
+}
+
+.input {
+    width: 500px;
+}
+
+body {
+    
+}
+
+h1 {
+    font-family: 'Shippori Mincho B1', serif;
+}
+
+li {
+    width: 500px;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(182,221,255,1) 0%, rgba(123,114,212,1) 100%); 
+}
+
+span {
+    display: block;
+    
 }

@@ -38,7 +38,7 @@ function displayMatches(){
         const regex = new RegExp(this.value, 'gi');
         const categoryName = place.category.replace(regex, `<span class="hl">${this.value}</span>`);
         return `
-            <li>
+            <li class="block mt-4 py-4">
                 <span class="name">${place.name}</span>
                 <span class="name">${categoryName}</span>
                 <span class="name">${place.address_line_1}</span>
