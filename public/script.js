@@ -39,11 +39,13 @@ function displayMatches(){
         const categoryName = place.category.replace(regex, `<span class="hl">${this.value}</span>`);
         return `
             <li class="block mt-4 py-4">
-                <span class="name">${place.name}</span>
+                <span class="name big">${place.name}</span>
                 <span class="name">${categoryName}</span>
-                <span class="name">${place.address_line_1}</span>
-                <span class="name">${place.city}</span>
-                <span class="name">${place.zip}</span>
+                <address>
+                    <span>${place.address_line_1}</span>
+                    <span>${place.city}</span>
+                    <span>${place.zip}</span>
+                </address>
             </li>
         `;
     }).join('');

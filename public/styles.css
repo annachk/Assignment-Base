@@ -1,3 +1,7 @@
+html {
+    background:rgb(170, 200, 255);
+}
+
 .container {
     width: 960px;
 }
@@ -6,21 +10,23 @@
     width: 500px;
 }
 
-body {
-    
+.big {
+    font-size: x-large;
 }
 
-h1 {
+h1, h2 {
     font-family: 'Shippori Mincho B1', serif;
 }
 
 li {
     width: 500px;
-    background: rgb(2,0,36);
-    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(182,221,255,1) 0%, rgba(123,114,212,1) 100%); 
+    background: rgb(213,220,194);
+    background: linear-gradient(0deg, rgba(213,220,194,1) 0%, rgba(254,218,63,1) 93%, rgba(204,160,99,1) 100%, rgba(176,211,95,1) 100%); 
 }
 
 span {
+    font-family: Arial, Helvetica, sans-serif;
     display: block;
-    
+    color: black;
+    margin-left: 10px;
 }
