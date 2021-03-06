@@ -1,16 +1,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width==device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>INST377 Assignment 1 Typeahead Requests</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel='stylesheet' href='styles.css'/>
 </head>
 <body>
-    <div class="userform">
-        <h1>Assignment 1</h1>
-        <form action="/api" class="search-form" method="post" name="userform">
-            <input type="text" class="search" name="search" id="search" placeholder=" " />
-            <ul class="suggestions">...</ul>
+    <div class="userform container">
+        <h1 class="title mt-4 has-text-black-bis">Assignment 1</h1>
+        <h2 class="subtitle has-text-black-ter">Anna Kafrune, Delmar Randolph, Andrea Tavakol</h2>
+        <form action="/api" class="search-form mt-1" method="post" name="userform">
+            <input type="text" class="input mt-1" name="search" id="search" placeholder=" " />
+            <ul class="suggestions mt-1">Search...</ul>
         </form>
     </div>
     <script src="script.js"></script>

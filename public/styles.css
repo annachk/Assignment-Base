@@ -1,0 +1,33 @@
+html {
+    background:rgb(170, 200, 255);
+}
+
+.container {
+    width: 960px;
+}
+
+.input {
+    width: 500px;
+}
+
+.big {
+    font-size: x-large;
+}
+
+h1, h2 {
+    font-family: 'Shippori Mincho B1', serif;
+}
+
+li {
+    margin-left: 10px;
+    width: 500px;
+    background: rgb(213,220,194);
+    background: linear-gradient(0deg, rgba(213,220,194,1) 0%, rgba(254,218,63,1) 93%, rgba(204,160,99,1) 100%, rgba(176,211,95,1) 100%); 
+}
+
+p, span {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    white-space: nowrap;
+    margin-left: 10px;
+}
