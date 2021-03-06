@@ -36,15 +36,17 @@ function displayMatches(){
     const matchArray = findMatches(this.value, x);
     const html = matchArray.map(place => {
         const regex = new RegExp(this.value, 'gi');
-        const categoryName = place.category.replace(regex, `<span class="hl">${this.value}</span>`);
+        const categoryName = place.category.replace(regex, `<p>${this.value}</p>`);
         return `
             <li class="block mt-4 py-4">
-                <span class="name big">${place.name}</span>
-                <span class="name">${categoryName}</span>
+                <p class="name big">${place.name}</p>
+                ${categoryName}
                 <address>
-                    <span>${place.address_line_1}</span>
-                    <span>${place.city}</span>
-                    <span>${place.zip}</span>
+                    <p>${place.address_line_1}
+                    </br>
+                    ${place.city}
+                    </br>
+                    ${place.zip}</p>
                 </address>
             </li>
         `;
