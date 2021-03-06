@@ -19,15 +19,14 @@ h1, h2 {
 }
 
 li {
-    margin-left: 10px;
     width: 500px;
+    padding-left: 10px;
     background: rgb(213,220,194);
     background: linear-gradient(0deg, rgba(213,220,194,1) 0%, rgba(254,218,63,1) 93%, rgba(204,160,99,1) 100%, rgba(176,211,95,1) 100%); 
 }
 
-p, span {
+span {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
-    white-space: nowrap;
-    margin-left: 10px;
+    text-transform: capitalize;
 }
