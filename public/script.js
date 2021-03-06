@@ -1,3 +1,5 @@
+// The filter is by category
+
 const endpoint = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json'
 x = []
 
@@ -14,7 +16,6 @@ async function windowActions(){
             
         
         });
-    
 
     search.addEventListener('input', async(event) => {
         console.log('input', event.target.value);
@@ -35,14 +36,18 @@ function displayMatches(){
     const matchArray = findMatches(this.value, x);
     const html = matchArray.map(place => {
         const regex = new RegExp(this.value, 'gi');
-        const categoryName = place.category.replace(regex, `<span class="hl">${this.value}</span>`);
+        const categoryName = place.category.replace(regex, `<p>${this.value}</p>`);
         return `
-            <li>
-                <span class="name">${place.name}</span>
-                <span class="name">${categoryName}</span>
-                <span class="name">${place.address_line_1}</span>
-                <span class="name">${place.city}</span>
-                <span class="name">${place.zip}</span>
+            <li class="block mt-4 py-4">
+                <p class="name big">${place.name}</p>
+                ${categoryName}
+                <address>
+                    <p>${place.address_line_1}
+                    </br>
+                    ${place.city}
+                    </br>
+                    ${place.zip}</p>
+                </address>
             </li>
         `;
     }).join('');
